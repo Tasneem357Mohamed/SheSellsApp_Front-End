@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm just a girl</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav_logo">
+            <div class="logo_text">
+                <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+            </div>
+            <div class="logo_image">
+            </div>
+        </div>
+        <div id="profileSection" class="profile">
+            <img src="home-profile.jpg" alt="Profile Image" id="profileImage" class="clicking">
+            <div id="dropdownMenu" class="dropdown-menu">
+                <a href="userpage.html">My Profile</a>
+                <a href="#" id="logoutLink">Log Out</a>
+            </div>
+        </div>
+
+        <div class="links" id="hidden">
+            <a href="register.html">Register<span></span></a>
+            <a href="log-in.html">Login<span></span></a>
+        </div>
+
+
+
+    </header>
+
+    <nav>
+        <div class="nav_content">
+            <a href="Make_up.HTML">Make Up<span></span></a>
+            <a href="skincare.html">Skin Care<span></span></a>
+            <a href="hairpage.html">Hair Care<span></span></a>
+            <a href="bath&body.html">Body&Bath<span></span></a>
+            <a href="cindex.html">Clothes<span></span></a>
+            <a href="Bags&Shoes.html">Shoes&Bags<span></span></a>
+            <a href="Access.html">Accessories<span></span></a>
+        </div>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" id="slide1">
+                <img src="images/slide1.jpg" alt="Image 1">
+            </div>
+            <div class="slide" id="slide2">
+                <img src="images/slide2.jpg" alt="Image 2">
+            </div>
+            <div class="slide" id="slide3">
+                <img src="images/slide3.jpg" alt="Image 3">
+            </div>
+            <div class="slide" id="slide4">
+                <img src="images/slide4.jpg" alt="Image 4">
+            </div>
+            <div class="slide" id="slide5">
+                <img src="images/slide5.jpg" alt="Image 5">
+            </div>
+
+
+        </div>
+        <button class="prev" onclick="showSlide(-1)">&#10094;</button>
+        <button class="next" onclick="showSlide(1)">&#10095;</button>
+    </div>
+
+
+
+    <section class="summary-details">
+        <br><br>
+        <details>
+            <summary>NEW ARRIVAL</summary>
+            <div class="details-content">
+                <div class="image-row">
+                    <img src="images/arrival_1.png" alt=" 1">
+                    <img src="images/arrival_2.png" alt=" 2">
+                    <img src="images/arrival_3.png" alt=" 3">
+                </div>
+                <div class="image-row">
+                    <img src="images/arrival_4.png" alt=" 4">
+                    <img src="images/arrival_5.png" alt=" 5">
+                    <img src="images/arrival_6.png" alt=" 6">
+                </div>
+                <div class="image-row">
+                    <img src="images/arrival_7.png" alt=" 7">
+                    <img src="images/arrival_8.png" alt=" 8">
+                    <img src="images/arrival_9.png" alt=" 9">
+                </div>
+            </div>
+        </details>
+    </section>
+    <footer id="footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h2 class="social">Follow Us</h2>
+                <ul class="social-media">
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-facebook"></i></div>
+                        <div class="link"> <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                Facebook
+                            </a></div>
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-twitter"></i></div>
+                        <div class="link"> <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                Twitter
+                            </a></div>
+
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-instagram"></i></div>
+                        <div class="link"> <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                Instagram
+                            </a></div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h2 class="about">About Us</h2>
+                <p class="p_about">We are a company that provides excellent products and services.</p>
+            </section>
+            <section class="footer-section">
+                <h2 class="contact">Contact Us</h2>
+                <p><span class="con">Email:</span> contact@example.com</p>
+                <p><span class="con">Phone:</span> (123) 456-7890</p>
+            </section>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

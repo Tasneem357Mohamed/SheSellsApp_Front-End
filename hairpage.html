@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+
+  <title>Hair Care</title>
+  <link rel="stylesheet" href="hairpage.css">
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav_logo">
+      <div class="logo_text">
+        <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+      </div>
+      <div class="logo_image">
+      </div>
+    </div>
+    <div class="nav_slide">
+      <div class="nav_icon_buttons">
+        <div class="nav_search">
+          <form class="search_bar">
+            <input type="text" placeholder="Search Here">
+            <button type="submit"><img src="Girls/search.png"></button>
+          </form>
+        </div>
+        <div class="nav_icon">
+          <ul>
+            <li>
+              <div class="heart-container">
+                <img src="Girls/pinky-heart.png" class="clicking heart_img" alt="heart" id="pink-hreat">
+              </div>
+            </li>
+            <li>
+              <div class="cart-container">
+                <img src="Girls/Cart.png" class="clicking cart_img" alt="Cart">
+                <img src="Girls/Deep_cart.png" class="clicking open_cart" id="cartImage" alt="Open Cart">
+              </div>
+            </li>
+            <li>
+              <div class="profile-container">
+                <img src="Girls/Profile.png" class="clicking profile" />
+                <img src="Girls/Deep_profile.png" class="clicking open-image">
+                <div id="dropdownMenu" class="dropdown-menu">
+                  <a href="userpage.html">My Profile</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <!-- Log Out Button -->
+              <button id="logoutButton">Log Out</button>
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Are you sure you want to log out?</p>
+                  <a href="home.html"><button>Yes, Log Out</button></a>
+                  <button id="cancelButton">Cancel
+
+                  </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav_content">
+        <a href="Make_up.HTML">Make Up<span></span></a>
+        <a href="skincare.html">Skin Care<span></span></a>
+        <a href="hairpage.html">Hair Care<span></span></a>
+        <a href="bath&body.html">Body&Bath<span></span></a>
+        <a href="cindex.html">Clothes<span></span></a>
+        <a href="Bags&Shoes.html">Shoes&Bags<span></span></a>
+        <a href="Access.html">Accessories<span></span></a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+
+
+  <div class="openningph">
+    <h2>Hair Section</h2>
+  </div>
+
+  <div class="lattest">
+    <p class="fon1">Our Lattest Products</p>
+  </div>
+
+  <div class="product-container">
+    <div class="product">
+      <img src="751724776145-removebg-preview.png" alt="nourish & flourish " class="product-image">
+      <h2 class="product-title">nourish & flourish </h2>
+      <p class="product-description"> Conditioner</p>
+      <p class="product-price">$25.0</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', '751724776145-removebg-preview.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , '751724776145-removebg-preview.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+    <div class="product">
+      <img src="601724776510.jpg" alt="Kerastase" class="product-image">
+      <h2 class="product-title">Kerastase</h2>
+      <p class="product-description">Hair Oil</p>
+      <p class="product-price">$18.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+
+    <div class="product">
+      <img src="set.jpg" alt="gisou" class="product-image">
+      <h2 class="product-title">gisou</h2>
+      <p class="product-description">Hair Care Set</p>
+      <p class="product-price">$40.0</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+
+    </div>
+
+
+
+
+    <div class="product">
+      <img src="a.png" alt="Living Proof" class="product-image">
+      <h2 class="product-title">Living Proof</h2>
+      <p class="product-description">Shampoo & Conditioner</p>
+      <p class="product-price">$35.0</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+  </div>
+  <div class="bestseller">
+    <p class="fon2">Best Seller</p>
+
+  </div>
+
+  <div class="product-container">
+    <div class="product">
+      <img src="741724777665.jpg" alt="OUAI" class="product-image">
+      <h2 class="product-title">OUAI</h2>
+      <p class="product-description">Curl Cream</p>
+      <p class="product-price">$10.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+    <div class="product">
+      <img src="861724778196.jpg" alt="Frens" class="product-image">
+      <h2 class="product-title">Frens</h2>
+      <p class="product-description">Hair Mist</p>
+      <p class="product-price">$8.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+    <div class="product">
+      <img src="721724778416.jpg" alt="Color Wow Hair" class="product-image">
+      <h2 class="product-title">Product 1</h2>
+      <p class="product-description">Hair Spray</p>
+      <p class="product-price">$13.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+
+
+
+    <div class="product">
+      <img src="641724778607.jpg" alt="OSIS +" class="product-image">
+      <h2 class="product-title">OSIS +</h2>
+      <p class="product-description"> Hair Protection Spray</p>
+      <p class="product-price">$28.0</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+    <br>
+    <div class="product">
+      <img src="9c9c059d4055ea46960c20482e4cc938-removebg-preview.png" alt="dae" class="product-image">
+      <h2 class="product-title">dae</h2>
+      <p class="product-description">Styling Cream</p>
+      <p class="product-price">$9.0</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+    <div class="product">
+      <img src="shampo.jpg" alt="Shampoo" class="product-image">
+      <h2 class="product-title">MONDAY</h2>
+      <p class="product-description">Volume Shampoo</p>
+      <p class="product-price">$21.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+
+
+    <div class="product">
+      <img src="661724781616.jpg" alt="Product 1" class="product-image">
+      <h2 class="product-title">OLAPLEX</h2>
+      <p class="product-description">Mostrize Mask</p>
+      <p class="product-price">$10.5</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+
+    <div class="product">
+      <img src="77.jpg" alt="amika" class="product-image">
+      <h2 class="product-title">amika</h2>
+      <p class="product-description">Repair Treatment</p>
+      <p class="product-price">$16.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+  </div>
+  <div class="Hair-Accessories">
+    <h2>Hair Accessories</h2>
+
+  </div>
+  <div class="product-container">
+    <div class="product 1 ">
+      <img src="0e9a0fae6135ecd3dd4c1ecbf70bd805-removebg-preview.png" alt="Product 1" class="product-image">
+      <h2 class="product-title">Rectangle Clips</h2>
+      <p class="product-description">Hair Clasps</p>
+      <p class="product-price">$9.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+    <div class="product 2 ">
+      <img src="2daef35b0eef483f49dac7f9bc45d15f-removebg-preview.png" alt="Bow Hair Clip" class="product-image">
+      <h2 class="product-title">Bow Hair Clip</h2>
+      <p class="product-description">Bow accessory</p>
+      <p class="product-price">$1.50</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+
+    <div class="product 3 ">
+      <img src="6bd19df6720d88f9d9e5d331cea070a2-removebg-preview (1).png" alt="Hair Iron" class="product-image">
+      <h2 class="product-title">Hair Iron</h2>
+      <p class="product-description">Heat styler</p>
+      <p class="product-price">$20.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+
+
+
+    <div class="product 4 ">
+      <img src="download.png" alt="Clips" class="product-image">
+      <h2 class="product-title">Clips</h2>
+      <p class="product-description">Hair accessories</p>
+      <p class="product-price">$1.50</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+    <br>
+    <div class="product 5 ">
+      <img src="521724774328.jpg" alt="Product 1" class="product-image">
+      <h2 class="product-title">Hair Dressing Comb</h2>
+      <p class="product-description">Styling tool</p>
+      <p class="product-price">$2.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+
+    <div class="product 6 ">
+      <img src="silk.jpg" alt="Product 1" class="product-image">
+      <h2 class="product-title">Silk bonnet</h2>
+      <p class="product-description">No Damage Hair</p>
+      <p class="product-price">$7.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+
+
+    <div class="product 7">
+      <img src="88.jpg" alt="Product 1" class="product-image">
+      <h2 class="product-title">Hair Ties</h2>
+      <p class="product-description">Elastic bands</p>
+      <p class="product-price">$5.00</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div><br />
+    </div>
+
+
+
+    <div class="product">
+      <img src="updated.jpg" alt="Product 1" class="product-image">
+      <h2 class="product-title">Butterfly Clips</h2>
+      <p class="product-description">Decorative clasps</p>
+      <p class="product-price">$7.50</p>
+      <div class="heart_button">
+        <img src="Girls/heart.png" id="heart16-image"
+          onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+      </div>
+      <div class="cart_button">
+        <button onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+          To Cart</button>
+      </div> <br />
+    </div>
+
+
+  </div>
+  <footer id="footer">
+    <div class="footer-content">
+      <section class="footer-section">
+        <h2 class="social">Follow Us</h2>
+        <ul class="social-media">
+          <li class="social_lick">
+            <div class="link_icon"><i class="bi bi-facebook"></i></div>
+            <div class="link"> <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                Facebook
+              </a></div>
+          </li>
+          <li class="social_lick">
+            <div class="link_icon"><i class="bi bi-twitter"></i></div>
+            <div class="link"> <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                Twitter
+              </a></div>
+
+          </li>
+          <li class="social_lick">
+            <div class="link_icon"><i class="bi bi-instagram"></i></div>
+            <div class="link"> <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                Instagram
+              </a></div>
+
+          </li>
+        </ul>
+      </section>
+      <section class="footer-section">
+        <h2 class="about">About Us</h2>
+        <p class="p_about">We are a company that provides excellent products and services.</p>
+      </section>
+      <section class="footer-section">
+        <h2 class="contact">Contact Us</h2>
+        <p><span class="con">Email:</span> contact@example.com</p>
+        <p><span class="con">Phone:</span> (123) 456-7890</p>
+      </section>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Our Website. All rights reserved.</p>
+  </div>
+
+  <script> // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("logoutButton");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Get the cancel button
+    var cancelButton = document.getElementById("cancelButton");
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks the cancel button, close the modal
+    cancelButton.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      const text = document.querySelector('.logo_text p');
+      text.innerHTML = text.innerText.split("").map(
+        (char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+      ).join("");
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const cartImage = document.getElementById('cartImage');
+
+      cartImage.addEventListener('click', function () {
+        console.log('Image clicked');
+        window.location.href = 'cart.HTML';
+      });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      const cartImage = document.getElementById('pink-hreat');
+
+      cartImage.addEventListener('click', function () {
+        console.log('Image clicked');
+        window.location.href = 'fav.HTML';
+      });
+    });
+
+    // Function to add a product to the cart
+    function addToCart(productName, productOldPrice, productNewPrice, productImage) {
+      // Retrieve existing cart items from localStorage or initialize as an empty array
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+      // Find the product in the cart
+      const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+
+      if (existingProductIndex > -1) {
+        // If the product exists, increment the quantity
+        cartItems[existingProductIndex].quantity += 1;
+      } else {
+        // If the product does not exist, add a new item with quantity 1
+        cartItems.push({
+          name: productName,
+          oldPrice: productOldPrice ? productOldPrice : null, // Save old price if it exists
+          newPrice: productNewPrice, // Save new price
+          image: productImage,
+          quantity: 1
+        });
+      }
+
+      // Save updated cart array back to localStorage
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+      // Provide feedback to the user (optional)
+      alert(`${productName} added to cart!`);
+    }
+
+
+    function toggleHeart(heartId, name, image, oldPrice, newPrice) {
+      const heartImage = document.getElementById(heartId);
+      const isFavorite = heartImage.src.includes('heart_filled.png');
+
+      if (isFavorite) {
+        heartImage.src = 'Girls/heart.png'; // Change to the empty heart image
+        removeFromFavorites(name);
+      } else {
+        heartImage.src = 'Girls/heart_filled.png'; // Change to the filled heart image
+        addToFavorites(name, image, oldPrice, newPrice);
+      }
+    }
+
+    // Function to add a product to favorites and store it in local storage
+    function addToFavorites(name, image, oldPrice, newPrice) {
+      let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+
+      // Check if item is already in favorites
+      if (!favorites.some(item => item.name === name)) {
+        favorites.push({ name, image, oldPrice, newPrice });
+        localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+      }
+    }
+
+    // Function to remove a product from favorites and update local storage
+    function removeFromFavorites(name) {
+      let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+      favorites = favorites.filter(item => item.name !== name);
+      localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+    }
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("logoutButton");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Get the cancel button
+    var cancelButton = document.getElementById("cancelButton");
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks the cancel button, close the modal
+    cancelButton.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

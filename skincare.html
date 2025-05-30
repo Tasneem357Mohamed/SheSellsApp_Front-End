@@ -1,0 +1,1342 @@
+﻿<html>
+
+<head>
+    <title>online skincare </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Favorite Button</title>
+    <style>
+        /* This is a navigation bar code */
+        * {
+            margin: 0;
+            padding: 0;
+            color: rgb(253, 113, 174);
+            box-sizing: border-box;
+            font-family: "Lily Script One", system-ui;
+        }
+
+        body {
+            background-color: #f7e3ea;
+            color: rgb(253, 113, 174);
+            font-family: "Lily Script One", system-ui;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            min-height: 100px;
+        }
+
+        .nav_logo {
+            margin-top: 15px;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav_content {
+            display: flex;
+            flex-direction: row;
+            padding-top: 60px;
+            margin-left: -70px;
+        }
+
+        .logo_image {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(Girls/logo.png);
+            background-size: cover;
+            border-radius: 50%;
+            filter: brightness(1.5) contrast(1.5);
+        }
+
+        .logo_text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: rotateText 10s linear infinite;
+            color: #fd71ae;
+        }
+
+        @keyframes rotateText {
+            0% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .logo_text span {
+            position: absolute;
+            left: 50%;
+            font-size: 1.2em;
+            transform-origin: 0 100px;
+        }
+
+        .nav_content a {
+            font-size: 1.1em;
+            color: #fd71ae;
+            text-decoration: none;
+            padding: 6px 35px;
+            position: relative;
+            /* Added position relative */
+            display: inline-block;
+            transition: .5s;
+        }
+
+        .nav_content a:hover {
+            color: #e14689;
+        }
+
+        .nav_content a span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-bottom: 3px solid #e14689;
+            border-radius: 15px;
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        nav a:hover span {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+
+        .nav_slide {
+            display: flex;
+            flex-direction: column;
+            min-height: 100px;
+            padding-left: 80px;
+        }
+
+        .nav_search {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav_icon_buttons {
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+        }
+
+        .nav_icon ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin-right: -50px;
+            margin-left: -50px;
+        }
+
+        .nav_icon li {
+            display: flex;
+            flex-direction: row;
+            padding-left: 12px;
+            padding-top: 25px;
+        }
+
+        .nav_icon li img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .nav_icon button {
+            border-radius: 15px;
+            border: 0;
+            width: 95px;
+            cursor: pointer;
+            background-color: #ffdbe9;
+            color: #fd71ae;
+            font-weight: bold;
+            font-size: 17px;
+            margin-left: -5px;
+            padding: 5px 0px;
+            text-decoration: none;
+            box-shadow: 0px 1px 3px #b70e57;
+            position: relative;
+            /* Added position relative */
+            display: inline-block;
+            transition: .5s;
+        }
+
+        .nav_icon li button:hover {
+            color: #e14689;
+        }
+
+        .nav_icon li button span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            padding: 13px;
+            border-bottom: 3px solid #e14689;
+            border-radius: 15px;
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .nav_icon li button:hover span {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+
+        .search_bar {
+            width: 100%;
+            background: rgb(253, 113, 174, 0.25);
+            max-width: 650px;
+            display: flex;
+            align-items: center;
+            border-radius: 70px;
+            padding: 5px 10px;
+            margin-left: -65px;
+            margin-top: 20px;
+        }
+
+        .search_bar input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 10px 18px;
+            font-size: 15px;
+            color: #f06ba5;
+        }
+
+        ::placeholder {
+            color: #e95796;
+        }
+
+        .nav_search button img {
+            width: 25px;
+        }
+
+        .nav_search button {
+            border: 0;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background: rgb(253, 113, 174);
+            cursor: pointer;
+        }
+
+        hr {
+            border: none;
+            height: 0.5px;
+            background-color: #f06ba5;
+            margin: 20px 0;
+        }
+
+        .profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .open-image {
+            display: none;
+            /* Hide by default */
+            position: absolute;
+            /* Make sure it's positioned relative to the container */
+            top: 0;
+            left: 0;
+            transform: translateY(-20px);
+            /* Start position off-screen */
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            /* Transition for both opacity and transform */
+        }
+
+        .open-image.show {
+            display: block;
+            /* Make sure it's displayed when it should be visible */
+            transform: translateY(0);
+            /* Move to the normal position */
+            opacity: 1;
+            /* Fully opaque */
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 110px;
+            background-color: #ffdbe9;
+            border: 3px solid white;
+            z-index: 1;
+            padding: 10px;
+            box-shadow: 0 8px 16px #e14689;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 5px 5px;
+            text-decoration: none;
+            color: #e14689;
+            font-size: 15px;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #e14689;
+            color: #ffdbe9;
+        }
+
+        .clicking {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .cart-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .cart_img {
+            cursor: pointer;
+            transition: opacity 0s ease;
+        }
+
+        .open_cart {
+            position: absolute;
+            /* Position relative to the container */
+            top: 0;
+            left: 0;
+            transform: translateY(-20px);
+            /* Initial position for transition */
+            opacity: 0;
+            /* Start invisible */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            /* Smooth transition */
+        }
+
+        .cart-container:hover .cart_img {
+            opacity: 0;
+            /* Fade out the main image when hovering */
+        }
+
+        .cart-container:hover .open_cart {
+            display: block;
+            /* Ensure it's displayed */
+            transform: translateY(0);
+            /* Move to its normal position */
+            opacity: 1;
+            /* Fully visible */
+        }
+
+
+        body {
+            background-color: #ffdbe9;
+        }
+
+        h1 {
+            text-align: left;
+            margin-left: 30px;
+            color: #fd71ae;
+        }
+
+        /* Styles for the pop-up modal */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black w/ opacity */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            /* Could be more or less, depending on screen size */
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .container {
+            margin: 10px 3px 50px 1px;
+            margin-right: -5px;
+            outline-color: #ffdbe9;
+            padding: 1px 5px 3px 3px;
+        }
+
+        .fb,
+        .sb,
+        .tb,
+        .ffb,
+        .f5b {
+            background-color: white;
+            border-color: #fd71ae;
+            border-style: solid;
+            border-radius: 20px;
+            width: 242px;
+            height: 315px;
+            margin: 1px 7px 30px 1px;
+            padding: 1px 5px 3px 1px;
+        }
+
+        .fb {
+            float: left;
+
+        }
+
+        .fb,
+        .sb,
+        .tb,
+        .ffb,
+        .f5b {
+            color: #000000;
+            border: 3px solid #fd71ae;
+            border-radius: 25px;
+            box-shadow: 0 0 8px 0 #e14689;
+            background-color: #fff;
+
+        }
+
+        .sb,
+        .tb,
+        .ffb,
+        .f5b {
+            float: right;
+        }
+
+        .des {
+            margin-top: -40px;
+        }
+
+        p {
+            color: black;
+            margin: 0.01px 15px 2px 30px;
+        }
+
+        button {
+            margin: 0.1px 15px 2px 30px;
+        }
+
+
+
+        #footer {
+            position: relative;
+            overflow: hidden;
+            color: white;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            margin-top: 20px auto;
+        }
+
+        #footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Girls/footer.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(10px);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            z-index: 1;
+            position: relative;
+        }
+
+        .footer-section {
+            margin: 10px;
+            min-width: 200px;
+            padding-left: 70px;
+        }
+
+        .social-media {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social_lick {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .link {
+            margin-right: 10px;
+        }
+
+        .link a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+
+        .link_icon {
+            font-size: 20px;
+            color: #b70e57;
+        }
+
+        .link_icon:hover {
+            color: #36061b;
+        }
+
+        .footer-bottom {
+            background-color: #b70e57;
+            height: 60px;
+            font-size: 14px;
+            text-align: center;
+            color: rgba(255, 255, 255);
+        }
+
+        .footer-bottom p {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 17px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+        }
+
+        .about {
+            padding-left: 170px;
+        }
+
+        .contact {
+            padding-left: 50px;
+        }
+
+        .con {
+            color: #b70e57;
+            padding-right: 5px;
+        }
+
+        .p_about {
+            color: #b70e57;
+        }
+
+        .cart_button button {
+            background-color: #fd71ae;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            box-shadow: 0 0 8px 0 #e14689;
+        }
+
+        .cart_button:hover button {
+            background-color: #b70e57;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-shadow: 0px 3px 4px #d01465;
+            text-align: center;
+        }
+
+        .heart_button {
+            margin-right: -70px;
+        }
+
+        .heart_button img {
+            width: 26px;
+            height: 26px;
+            /* cursor: pointer; */
+            margin-left: 27px;
+            margin-bottom: -10px;
+        }
+
+
+        /* .heart-button {
+            background: none;
+            border: none;
+            color: #ccc;
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .heart-button.clicked {
+            color: red;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- This is a function of heart  -->
+    <script>
+        function toggleFavorite(buttonNum) {
+            var heartButtons = document.querySelectorAll('.heart-button');
+
+            heartButtons.forEach(function (button, index) {
+                if (index + 1 === buttonNum) {
+                    button.classList.add('clicked');
+                } else {
+                    button.classList.remove('clicked');
+                }
+            });
+        }
+
+    </script>
+
+    <!-- This is a navigation bar  -->
+
+    <nav>
+        <div class="nav_logo">
+            <div class="logo_text">
+                <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+            </div>
+            <div class="logo_image">
+            </div>
+        </div>
+        <div class="nav_slide">
+            <div class="nav_icon_buttons">
+                <div class="nav_search">
+                    <form class="search_bar">
+                        <input type="text" placeholder="Search Here">
+                        <button type="submit"><img src="Girls/search.png"></button>
+                    </form>
+                </div>
+                <div class="nav_icon">
+                    <ul>
+                        <li>
+                            <div class="heart-container">
+                                <img src="Girls/pinky-heart.png" class="clicking heart_img" alt="heart" id="pink-hreat">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-container">
+                                <img src="Girls/Cart.png" class="clicking cart_img" alt="Cart">
+                                <img src="Girls/Deep_cart.png" class="clicking open_cart" id="cartImage"
+                                    alt="Open Cart">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-container">
+                                <img src="Girls/Profile.png" class="clicking profile" />
+                                <img src="Girls/Deep_profile.png" class="clicking open-image">
+                                <div id="dropdownMenu" class="dropdown-menu">
+                                    <a href="userpage.html">My Profile</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Log Out Button -->
+                            <button id="logoutButton">Log Out</button>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Are you sure you want to log out?</p>
+                                    <a href="home.html"><button>Yes, Log Out</button></a>
+                                    <button id="cancelButton">Cancel</button>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_content">
+                <a href="Make_up.HTML">Make Up<span></span></a>
+                <a href="skincare.html">Skin Care<span></span></a>
+                <a href="hairpage.html">Hair Care<span></span></a>
+                <a href="bath&body.html">Body&Bath<span></span></a>
+                <a href="cindex.html">Clothes<span></span></a>
+                <a href="Bags&Shoes.html">Shoes&Bags<span></span></a>
+                <a href="Access.html">Accessories<span></span></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <hr />
+    <h1>
+        &#x1F380; SKIN CARE PRODUCTS &#x1F380;
+    </h1>
+
+    <br />
+    <br />
+
+    <div class="container">
+
+        <div class="fb">
+            <img src="sunncare/Screenshot_20240825_032557_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="235" height="220" /><br />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 35 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div><br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,35 ,'sunncare/Screenshot_20240825_032557_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="sb">
+            <img src="sunncare/Screenshot_20240825_032640_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="235" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 30 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032640_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,30 ,'sunncare/Screenshot_20240825_032640_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="tb">
+            <img src="sunncare/Screenshot_20240825_032712_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="235" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 19 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032640_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,19 ,'sunncare/Screenshot_20240825_032712_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+
+        <div class="ffb">
+            <img src="sunncare/Screenshot_20240825_032734_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="235" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 25 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032640_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,25 ,'sunncare/Screenshot_20240825_032734_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+
+        </div>
+
+        <div class="f5b">
+            <img src="sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="235" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 26 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,26 ,'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <br /> <br /> <br />
+
+
+
+    <div class="container">
+
+        <div class="fb">
+            <img src="eyeecare/eye_care_pic1-removebg-preview.png" alt="no photo" width="230" height="215" /><br />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 19 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,19 ,'eyeecare/eye_care_pic1-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="sb">
+            <img src="eyeecare/eye_care_pic3-removebg-preview.png" alt="no photo" width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 30 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,30 ,'eyeecare/eye_care_pic3-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="tb">
+            <img src="eyeecare/eye_care_pic4-removebg-preview (1).png" alt="no photo" width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 31 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,31 ,'eyeecare/eye_care_pic4-removebg-preview (1).png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+
+        <div class="ffb">
+            <img src="eyeecare/eyeee-removebg-preview.png" alt="no photo" width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 24 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button onclick="addToCart('Lorem ipsum dolor sit',null,24 ,'eyeecare/eyeee-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+
+        </div>
+
+        <div class="f5b">
+            <img src="eyeecare/Screenshot_20240825_002917_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 21$ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,21 ,'eyeecare/Screenshot_20240825_002917_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <br /> <br /> <br />
+
+    <div class="container">
+
+        <div class="fb">
+            <img src="lipcare/Screenshot_20240825_024244_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" /><br />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 19 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div>
+            <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,19 ,'lipcare/Screenshot_20240825_024307_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="sb">
+            <img src="lipcare/Screenshot_20240825_024307_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="100%" height="auto" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 23 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,23,'lipcare/Screenshot_20240825_024307_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="tb">
+            <img src="lipcare/Screenshot_20240825_024329_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 17 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,17 ,'lipcare/Screenshot_20240825_024329_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+
+        <div class="ffb">
+            <img src="lipcare/Screenshot_20240825_024542_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="250" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 21 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,21 ,'lipcare/Screenshot_20240825_024542_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+
+        </div>
+
+        <div class="f5b">
+            <img src="lipcare/Screenshot_20240825_025235_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 18$ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div><br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,18 ,'lipcare/Screenshot_20240825_025235_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <br /> <br /> <br />
+
+
+    <div class="container">
+
+        <div class="fb">
+            <img src="Moisturizers/Screenshot_20240825_035434_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" /><br />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 17 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,17 ,'Moisturizers/Screenshot_20240825_035434_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="sb">
+            <img src="Moisturizers/Screenshot_20240825_035500_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 24 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,24 ,'Moisturizers/Screenshot_20240825_035500_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+        <div class="tb">
+            <img src="Moisturizers/Screenshot_20240825_035425_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 28 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,28 ,'Moisturizers/Screenshot_20240825_035425_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+
+        <div class="ffb">
+            <img src="Moisturizers/Screenshot_20240825_035210_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="230" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 31 $ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div> <br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,31 ,'Moisturizers/Screenshot_20240825_035210_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+
+        </div>
+
+        <div class="f5b">
+            <img src="Moisturizers/Screenshot_20240825_035152_Samsung_Internet-removebg-preview.png" alt="no photo"
+                width="260" height="220" />
+            <p class="des">Lorem ipsum dolor sit</p>
+            <p> 35$ </p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart20-image"
+                    onclick="toggleHeart('heart20-image','Mac lip stick', 'sunncare/Screenshot_20240825_032757_Samsung_Internet-removebg-preview.png' , 'null' , '55.00$')">
+            </div><br />
+            <div class="cart_button">
+                <button
+                    onclick="addToCart('Lorem ipsum dolor sit',null,35 ,'Moisturizers/Screenshot_20240825_035152_Samsung_Internet-removebg-preview.png')">Add
+                    To
+                    Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <br /> <br />
+
+
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h2 class="social">Follow Us</h2>
+                <ul class="social-media">
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-facebook"></i></div>
+                        <div class="link">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                Facebook
+                            </a>
+                        </div>
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-twitter"></i></div>
+                        <div class="link">
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                Twitter
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-instagram"></i></div>
+                        <div class="link">
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                Instagram
+                            </a>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h2 class="about">About Us</h2>
+                <p class="p_about">We are a company that provides excellent products and services.</p>
+            </section>
+            <section class="footer-section">
+                <h2 class="contact">Contact Us</h2>
+                <p><span class="con">Email:</span> contact@example.com</p>
+                <p><span class="con">Phone:</span> (123) 456-7890</p>
+            </section>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+    </div>
+
+
+    <script type="text/javascript">
+
+        // This is a  navigation bar code
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.querySelector('.logo_text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+            ).join("");
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileImages = document.getElementsByClassName('profile');
+            const profileImageOpen = document.querySelector('.open-image');
+            const menu = document.getElementById('dropdownMenu');
+
+            Array.from(profileImages).forEach(profileImage => {
+                profileImage.addEventListener('click', function () {
+                    if (menu.style.display === 'block') {
+                        menu.style.display = 'none';
+                        profileImage.style.opacity = '1';
+                        profileImageOpen.classList.remove('show');
+                    } else {
+                        menu.style.display = 'block';
+                        profileImage.style.opacity = '0';
+                        profileImageOpen.classList.add('show');
+                    }
+                });
+            });
+            document.addEventListener('click', function (event) {
+                if (!Array.from(profileImages).includes(event.target) && !menu.contains(event.target) && !profileImageOpen.contains(event.target)) {
+                    menu.style.display = 'none';
+                    Array.from(profileImages).forEach(profileImage => profileImage.style.opacity = '1');
+                    profileImageOpen.classList.remove('show');
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('cartImage');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked'); // Debugging statement
+                window.location.href = '#'; // Replace with your target URL
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('cartImage');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'cart.HTML';
+            });
+        });
+        // Function to add a product to the cart
+        function addToCart(productName, productOldPrice, productNewPrice, productImage) {
+            // Retrieve existing cart items from localStorage or initialize as an empty array
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Find the product in the cart
+            const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+
+            if (existingProductIndex > -1) {
+                // If the product exists, increment the quantity
+                cartItems[existingProductIndex].quantity += 1;
+            } else {
+                // If the product does not exist, add a new item with quantity 1
+                cartItems.push({
+                    name: productName,
+                    oldPrice: productOldPrice ? productOldPrice : null, // Save old price if it exists
+                    newPrice: productNewPrice, // Save new price
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save updated cart array back to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Provide feedback to the user (optional)
+            alert(`${productName} added to cart!`);
+        }
+        // Function to add a product to the cart
+        function addToCart(productName, productOldPrice, productNewPrice, productImage) {
+            // Retrieve existing cart items from localStorage or initialize as an empty array
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Find the product in the cart
+            const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+
+            if (existingProductIndex > -1) {
+                // If the product exists, increment the quantity
+                cartItems[existingProductIndex].quantity += 1;
+            } else {
+                // If the product does not exist, add a new item with quantity 1
+                cartItems.push({
+                    name: productName,
+                    oldPrice: productOldPrice ? productOldPrice : null, // Save old price if it exists
+                    newPrice: productNewPrice, // Save new price
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save updated cart array back to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Provide feedback to the user (optional)
+            alert(`${productName} added to cart!`);
+        }
+
+        function toggleHeart(heartId, name, image, oldPrice, newPrice) {
+            const heartImage = document.getElementById(heartId);
+            const isFavorite = heartImage.src.includes('heart_filled.png');
+
+            if (isFavorite) {
+                heartImage.src = 'Girls/heart.png'; // Change to the empty heart image
+                removeFromFavorites(name);
+            } else {
+                heartImage.src = 'Girls/heart_filled.png'; // Change to the filled heart image
+                addToFavorites(name, image, oldPrice, newPrice);
+            }
+        }
+
+        // Function to add a product to favorites and store it in local storage
+        function addToFavorites(name, image, oldPrice, newPrice) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+
+            // Check if item is already in favorites
+            if (!favorites.some(item => item.name === name)) {
+                favorites.push({ name, image, oldPrice, newPrice });
+                localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+            }
+        }
+
+        // Function to remove a product from favorites and update local storage
+        function removeFromFavorites(name) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+            favorites = favorites.filter(item => item.name !== name);
+            localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('pink-hreat');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'fav.HTML';
+            });
+        });
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("logoutButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the cancel button
+        var cancelButton = document.getElementById("cancelButton");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks the cancel button, close the modal
+        cancelButton.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
