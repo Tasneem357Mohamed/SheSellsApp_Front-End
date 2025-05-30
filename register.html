@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Register page</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="home.html" class="link">Home Page</a>
+
+        <!-- LOGO -->
+        <div class="nav_logo">
+            <div class="logo_text">
+                <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+            </div>
+            <div class="logo_image">
+            </div>
+        </div>
+
+        <h1 class="h">WELCOME</h1>
+    </header>
+
+    <div class="line"></div> <!-- put line -->
+
+    <div class="container"> <!--RegistrationForm-->
+        <h1> REGISTER</h1>
+
+        <form id="registrationForm" onsubmit="return validateForm(event)">
+            <input type="text" placeholder="UserName" id="UserName" name="UserName" required>
+            <span class="error" id="UserNameError"></span>
+
+            <input type="email" placeholder="E_mail" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
+            <input type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required>
+            <span class="error" id="confirmpasswordError"></span>
+
+            <button type="submit">Register </button>
+        </form>
+    </div>
+
+    <!--FOR LOGO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.querySelector('.logo_text p');
+            text.innerHTML = text.innerText
+                .split("")
+                .map((char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`)
+                .join("");
+        });
+    </script>
+</body>
+
+</html>

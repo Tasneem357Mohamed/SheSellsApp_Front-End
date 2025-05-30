@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I'm just a girl</title>
+    <link rel="stylesheet" href="Make_up.CSS">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css"
+        integrity="sha512-/XZktyD0Q8vhJpSgG2EqPHI7L+U0Qh1IN4jv7Wj19gC5dC8o+2O2Ijjj5e/JkENJlrbU5PKM8I2/5FxjMM0/+A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_logo">
+            <div class="logo_text">
+                <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+            </div>
+            <div class="logo_image">
+            </div>
+        </div>
+        <div class="nav_slide">
+            <div class="nav_icon_buttons">
+                <div class="nav_search">
+                    <form class="search_bar">
+                        <input type="text" placeholder="Search Here">
+                        <button type="submit"><img src="Girls/search.png"></button>
+                    </form>
+                </div>
+                <div class="nav_icon">
+                    <ul>
+                        <li>
+                            <div class="heart-container">
+                                <img src="Girls/pinky-heart.png" class="clicking heart_img" alt="heart" id="pink-hreat">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-container">
+                                <img src="Girls/Cart.png" class="clicking cart_img" alt="Cart">
+                                <img src="Girls/Deep_cart.png" class="clicking open_cart" id="cartImage"
+                                    alt="Open Cart">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-container">
+                                <img src="Girls/Profile.png" class="clicking profile" />
+                                <img src="Girls/Deep_profile.png" class="clicking open-image">
+                                <div id="dropdownMenu" class="dropdown-menu">
+                                    <a href="userpage.html">My Profile</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Log Out Button -->
+                            <button id="logoutButton">Log Out</button>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Are you sure you want to log out?</p>
+                                    <a href="home.html"><button>Yes, Log Out</button></a>
+                                    <button id="cancelButton">Cancel
+
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_content">
+                <a href="Make_up.HTML">Make Up<span></span></a>
+                <a href="skincare.html">Skin Care<span></span></a>
+                <a href="hairpage.html">Hair Care<span></span></a>
+                <a href="bath&body.html">Body&Bath<span></span></a>
+                <a href="cindex.html">Clothes<span></span></a>
+                <a href="Bags&Shoes.html">Shoes&Bags<span></span></a>
+                <a href="Access.html">Accessories<span></span></a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <section>
+        <div class="container mt-4">
+            <div class="section_head">
+                <h1>&#x1F380; Make Up Page &#x1F380;</h1>
+            </div>
+            <div class="section_content">
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">40%</span></p>
+                    </div>
+                    <div class="Dior_img">
+                        <img src="Girls/Dior/Dior_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color brown1" onclick="changeImage('Girls/Dior/Dior1.png')"></div>
+                            <div class="color brown2" onclick="changeImage('Girls/Dior/Dior2.png')"></div>
+                            <div class="color brown3" onclick="changeImage('Girls/Dior/Dior3.png')"></div>
+                            <div class="color brown4" onclick="changeImage('Girls/Dior/Dior4.png')"></div>
+                            <div class="color brown5" onclick="changeImage('Girls/Dior/Dior5.png')"></div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Dior Foundation</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">554.00$</span>
+                            <span class="new_price">332.4$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/foundations/Nars.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Nars foundation shade 304</p>
+                        </div>
+                        <div class="des_price">
+                            <p>50.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart2-image"
+                                onclick="toggleHeart('heart2-image', 'Nars foundation shade 304', 'Girls/foundations/Nars.png', null , '50.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Nars foundation shade 304', null, 50.00, 'Girls/foundations/Nars.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/foundations/Fit.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Fit Me! foundation shade M20</p>
+                        </div>
+                        <div class="des_price">
+                            <p>32.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart3-image" data-name="Full Make Up Box"
+                                onclick="toggleHeart('heart3-image', 'Fit Me! foundation shade M20', 'Girls/foundations/Fit.png', null , '32.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button class="add-to-cart"
+                                onclick="addToCart('Fit Me! foundation shade M20', null , 32.00,'Girls/foundations/Fit.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">10%</span></p>
+                    </div>
+                    <div class="item_img">
+                        <img src="Girls/foundations/Channel.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Channel foundation shade 71</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">56.00$</span>
+                            <span class="new_price">50.4$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart4-image"
+                                onclick="toggleHeart('heart4-image', 'Channel foundation shade 71', 'Girls/foundations/Channel.png', '56.00$' , '50.04$')">
+                        </div>
+                        <div class="cart_button">
+                            <button class="add-to-cart"
+                                onclick="addToCart('Channel foundation shade 71',56.00,50.4,'Girls/foundations/Channel.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/foundations/Flawless.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Flowless foundation shade 01</p>
+                        </div>
+                        <div class="des_price">
+                            <p>3.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart5-image"
+                                onclick="toggleHeart('heart5-image', 'Flowless foundation shade 01', 'Girls/foundations/Flawless.png', null , '3.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Flowless foundation shade 01',null,3.00,'Girls/foundations/Flawless.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">15%</span></p>
+                    </div>
+                    <div class="Sheglam_img">
+                        <img src="Girls/foundations/Sheglam/Sheglam_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color brown1"
+                                onclick="she_changeImage('Girls/foundations/Sheglam/Sheglam1.png')">
+                            </div>
+                            <div class="color brown2"
+                                onclick="she_changeImage('Girls/foundations/Sheglam/Sheglam2.png')">
+                            </div>
+                            <div class="color brown3"
+                                onclick="she_changeImage('Girls/foundations/Sheglam/Sheglam3.png')">
+                            </div>
+                            <div class="color brown4"
+                                onclick="she_changeImage('Girls/foundations/Sheglam/Sheglam4.png')">
+                            </div>
+                            <div class="color brown5"
+                                onclick="she_changeImage('Girls/foundations/Sheglam/Sheglam5.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Sheglam Foundation</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">75.00$</span>
+                            <span class="new_price">63.75$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart6-image"
+                                onclick="toggleHeart('heart6-image','Sheglam Foundation','Girls/foundations/Sheglam/Sheglam_set.png','75.00$','63.75$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Sheglam Foundation',75.00,63.75,'Girls/foundations/Sheglam/Sheglam_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="Fenty_img">
+                        <div class="sale-badge">
+                            <p>Sale<span class="sale_per">32%</span></p>
+                        </div>
+                        <img src="Girls/foundations/Fenty_Beuaty/fenty_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color brown1"
+                                onclick="fe_changeImage('Girls/foundations/Fenty_Beuaty/Fenty1.png')">
+                            </div>
+                            <div class="color brown2"
+                                onclick="fe_changeImage('Girls/foundations/Fenty_Beuaty/Fenty2.png')">
+                            </div>
+                            <div class="color brown3"
+                                onclick="fe_changeImage('Girls/foundations/Fenty_Beuaty/Fenty3.png')">
+                            </div>
+                            <div class="color brown4"
+                                onclick="fe_changeImage('Girls/foundations/Fenty_Beuaty/Fenty4.png')">
+                            </div>
+                            <div class="color brown5"
+                                onclick="fe_changeImage('Girls/foundations/Fenty_Beuaty/Fenty5.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Fenty Beuaty Foundation</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">302.00$</span>
+                            <span class="new_price">205.36$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart7-image"
+                                onclick="toggleHeart('heart7-image','Fenty Beuaty Foundation','Girls/foundations/Fenty_Beuaty/fenty_set.png','302.00$' ,'205.36$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Fenty Beuaty Foundation' ,302.00 ,205.36 , 'Girls/foundations/Fenty_Beuaty/fenty_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/foundations/YSL.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Yls deep1 foundation shade 05</p>
+                        </div>
+                        <div class="des_price">
+                            <p>22.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart8-image"
+                                onclick="toggleHeart('heart8-image','Yls deep1 foundation shade 05','Girls/foundations/YSL.png' , 'null' , '22.00')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Yls deep1 foundation shade 05' , null , 22.00 , 'Girls/foundations/YSL.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/foundations/YSL2.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>YLS deep2 foundation shade 005</p>
+                        </div>
+                        <div class="des_price">
+                            <p>67.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart9-image"
+                                onclick="toggleHeart('heart9-image','YLS deep2 foundation shade 005' ,'Girls/foundations/YSL2.png', 'null' , '67.00')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('YLS deep2 foundation shade 005' , null , 67.00 , 'Girls/foundations/YSL2.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="shefa_img">
+                        <img src="Girls/Lip/Shefa/sehfa_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color red" onclick="shefa_changeImage('Girls/Lip/Shefa/set1.png')"></div>
+                            <div class="color nodebrown1" onclick="shefa_changeImage('Girls/Lip/Shefa/set2.png')"></div>
+                            <div class="color nodebrown2" onclick="shefa_changeImage('Girls/Lip/Shefa/set3.png')"></div>
+                            <div class="color pink1" onclick="shefa_changeImage('Girls/Lip/Shefa/set4.png')"></div>
+                            <div class="color pink2" onclick="shefa_changeImage('Girls/Lip/Shefa/set5.png')"></div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Kylie Lip Sets</p>
+                        </div>
+                        <div class="des_price">
+                            <p>55.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart10-image"
+                                onclick="toggleHeart('heart10-image','Kylie Lip Sets' , 'Girls/Lip/Shefa/sehfa_set.png'  , 'null','55.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Kylie Lip Sets' , null,55.00 , 'Girls/Lip/Shefa/sehfa_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/Brow/Brow_liquid.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>E.L.F liquid brow gel deep brown</p>
+                        </div>
+                        <div class="des_price">
+                            <p>7.30$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart11-image"
+                                onclick="toggleHeart('heart11-image','E.L.F liquid brow gel deep brown' , 'Girls/Brow/Brow_liquid.png', 'null' , '7.30$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('E.L.F liquid brow gel deep brown' , null , 7.30 , 'Girls/Brow/Brow_liquid.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/Brush/blander2.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Oceone flat blinder</p>
+                        </div>
+                        <div class="des_price">
+                            <p>70.30$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart12-image"
+                                onclick="toggleHeart('heart12-image','Oceone flat blinder' , 'Girls/Brush/blander2.png' , 'null' , '70.30$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Oceone flat blinder' , null , 70.30, 'Girls/Brush/blander2.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/glitter/flower.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Flower highliter</p>
+                        </div>
+                        <div class="des_price">
+                            <p>70.90$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart13-image"
+                                onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">5%</span></p>
+                    </div>
+                    <div class="item_img">
+                        <img src="Girls/lashes/l4.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Pink Lashes</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">35.80$</span>
+                            <span class="new_price">34.01$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart14-image"
+                                onclick="toggleHeart('heart14-image','Pink Lashes' , 'Girls/lashes/l4.png'  ,'35.80' , '34.01$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Pink Lashes' ,35.80 , 34.01 , 'Girls/lashes/l4.png')">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="essence_img">
+                        <img src="Girls/mascara_essence/E_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color blue" onclick="essence_changeImage('Girls/mascara_essence/Blu.png')">
+                            </div>
+                            <div class="color orange" onclick="essence_changeImage('Girls/mascara_essence/o.png')">
+                            </div>
+                            <div class="color green" onclick="essence_changeImage('Girls/mascara_essence/G.png')"></div>
+                            <div class="color pink1" onclick="essence_changeImage('Girls/mascara_essence/P.png')"></div>
+                            <div class="color purple" onclick="essence_changeImage('Girls/mascara_essence/PU.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Essence mascara</p>
+                        </div>
+                        <div class="des_price">
+                            <p>55.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart15-image"
+                                onclick="toggleHeart('heart15-image','Essence mascara'  ,'Girls/mascara_essence/E_set.png', 'null' , '55.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Essence mascara' , null , 55.00 , 'Girls/mascara_essence/E_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">75%</span></p>
+                    </div>
+                    <div class="item_img">
+                        <img src="Girls/palettes/Full_make_palette.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Full Make Up Box</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">1500$</span>
+                            <span class="new_price">375$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart16-image"
+                                onclick="toggleHeart('heart16-image','Full Make Up Box', 'Girls/palettes/Full_make_palette.png', '500$', '375$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Full Make Up Box' , 1500 , 375 , 'Girls/palettes/Full_make_palette.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/Lip/gloss2.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Fenty Beuaty Lip Gloss Rose</p>
+                        </div>
+                        <div class="des_price">
+                            <p>35.80$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart17-image"
+                                onclick="toggleHeart('heart17-image','Fenty Beuaty Lip Gloss Rose','Girls/Lip/gloss2.png' , 'null' , '35.80$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Fenty Beuaty Lip Gloss Rose' , null , 35.80 , 'Girls/Lip/gloss2.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="pro_img">
+                        <img src="Girls/pro/pro_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color brown1" onclick="pro_changeImage('Girls/pro/pro1.png')"></div>
+                            <div class="color brown2" onclick="pro_changeImage('Girls/pro/pro2.png')"></div>
+                            <div class="color brown3" onclick="pro_changeImage('Girls/pro/pro3.png')"></div>
+                            <div class="color brown4" onclick="pro_changeImage('Girls/pro/pro4.png')"></div>
+                            <div class="color brown5" onclick="pro_changeImage('Girls/pro/pro5.png')"></div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Pro conceler</p>
+                        </div>
+                        <div class="des_price">
+                            <p>55.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart18-image"
+                                onclick="toggleHeart('heart18-image','Pro conceler' , 'Girls/pro/pro_set.png', 'null' , '55.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Pro conceler' , null , 55.00 , 'Girls/pro/pro_set.png')">Add To
+                                Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/primer/Pelf.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>E.L.F stiky primer</p>
+                        </div>
+                        <div class="des_price">
+                            <p>45.80$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart19-image"
+                                onclick="toggleHeart('heart19-image','E.L.F stiky primer' , 'Girls/primer/Pelf.png' , 'null' , '45.80$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('E.L.F stiky primer' , null , 45.80 , 'Girls/primer/Pelf.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="lip_mac_img">
+                        <img src="Girls/Lip/mac/sticmac_set.png" class="zoomable">
+                        <div class="color_group1">
+                            <div class="color red1" onclick="mac_changeImage('Girls/Lip/mac/Smac1.png')"></div>
+                            <div class="color red" onclick="mac_changeImage('Girls/Lip/mac/Smac2.png')"></div>
+                            <div class="color peach1" onclick="mac_changeImage('Girls/Lip/mac/Smac4.png')"></div>
+                            <div class="color peach" onclick="mac_changeImage('Girls/Lip/mac/Smac5.png')"></div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Mac lip stick</p>
+                        </div>
+                        <div class="des_price">
+                            <p>55.00$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart20-image"
+                                onclick="toggleHeart('heart20-image','Mac lip stick', 'Girls/Lip/mac/sticmac_set.png' , 'null' , '55.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Mac lip stick' , null , 55.00 , 'Girls/Lip/mac/sticmac_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/Bronzer & contor/BMarad.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Mario liquid contor</p>
+                        </div>
+                        <div class="des_price">
+                            <p>45.80$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart21-image"
+                                onclick="toggleHeart('heart21-image','Mario liquid contor' , 'Girls/Bronzer & contor/BMarad.png' , 'null' , '45.80$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Mario liquid contor' , null , 45.80 , 'Girls/Bronzer & contor/BMarad.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">20%</span></p>
+                    </div>
+                    <div class="item_img">
+                        <img src="Girls/powder/powfit.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Fit Me! Powder shade 230</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">55.00$</span>
+                            <span class="new_price">44.00$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart22-image"
+                                onclick="toggleHeart('heart22-image','Fit Me! Powder shade 230' , 'Girls/powder/powfit.png', '55.00$' , '44.00$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Fit Me! Powder shade 230' , 55.00 , 44.00 , 'Girls/powder/powfit.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="item_img">
+                        <img src="Girls/liner/Dior_liner.png">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Dior EyeLiner</p>
+                        </div>
+                        <div class="des_price">
+                            <p>30.80$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart23-image"
+                                onclick="toggleHeart('heart23-image','Dior EyeLiner' , 'Girls/liner/Dior_liner.png', 'null' , '30.80$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Dior EyeLiner' , null , 30.80 , 'Girls/liner/Dior_liner.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="rare_img">
+                        <img src="Girls/Rare/rare_set.png" class="zoomable">
+                        <div class="color_group">
+                            <div class="color red3" onclick="rare_changeImage('Girls/Rare/rare1.png')"></div>
+                            <div class="color orange1" onclick="rare_changeImage('Girls/Rare/rare2.png')"></div>
+                            <div class="color pinkno" onclick="rare_changeImage('Girls/Rare/rare3.png')"></div>
+                            <div class="color peach3" onclick="rare_changeImage('Girls/Rare/rare4.png')"></div>
+                            <div class="color rose" onclick="rare_changeImage('Girls/Rare/rare5.png')"></div>
+                        </div>
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Rare Beuaty liquid blusher</p>
+                        </div>
+                        <div class="des_price">
+                            <p>30.80$</p>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart24-image"
+                                onclick="toggleHeart('heart24-image','Rare Beuaty liquid blusher','Girls/Rare/rare_set.png' , 'null' , '30.80$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Rare Beuaty liquid blusher' , null , 30.80 ,'Girls/Rare/rare_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Item">
+                    <div class="sale-badge">
+                        <p>Sale <span class="sale_per">50%</span></p>
+                    </div>
+                    <div class="item_img">
+                        <img src="Girls/Brush/Brush_set.png" class="zoomable">
+                    </div>
+                    <div class="item_des">
+                        <div class="des_name">
+                            <p>Brush set</p>
+                        </div>
+                        <div class="des_price">
+                            <span class="old_price">77.80$</span>
+                            <span class="new_price">38.9$</span>
+                        </div>
+                    </div>
+                    <div class="item_button">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart25-image"
+                                onclick="toggleHeart('heart25-image','Brush set' , 'Girls/Brush/Brush_set.png' , '77.80$' , '38.90$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Brush set' , 77.80 , 38.90 , 'Girls/Brush/Brush_set.png')">Add
+                                To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h2 class="social">Follow Us</h2>
+                <ul class="social-media">
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-facebook"></i></div>
+                        <div class="link"> <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                Facebook
+                            </a></div>
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-twitter"></i></div>
+                        <div class="link"> <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                Twitter
+                            </a></div>
+
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-instagram"></i></div>
+                        <div class="link"> <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                Instagram
+                            </a></div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h2 class="about">About Us</h2>
+                <p class="p_about">We are a company that provides excellent products and services.</p>
+            </section>
+            <section class="footer-section">
+                <h2 class="contact">Contact Us</h2>
+                <p><span class="con">Email:</span> contact@example.com</p>
+                <p><span class="con">Phone:</span> (123) 456-7890</p>
+            </section>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.querySelector('.logo_text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+            ).join("");
+        });
+        function changeImage(newSrc) {
+            const mainImage = document.getElementsByClassName('zoomable');
+
+            // Apply the zoom effect when changing the image
+            mainImage.style.transform = 'scale(1.1)';
+
+            // Change the image source to the selected color
+            mainImage.src = newSrc;
+
+            // Reset the zoom after a short delay
+            setTimeout(() => {
+                mainImage.style.transform = 'scale(1)'; // Reset the scale
+            }, 100); // Adjust the timeout as needed
+        }
+        function changeImage(newImage) {
+            const imageElement = document.querySelector('.Dior_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function pro_changeImage(newImage) {
+            const imageElement = document.querySelector('.pro_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function she_changeImage(newImage) {
+            const imageElement = document.querySelector('.Sheglam_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function mac_changeImage(newImage) {
+            const imageElement = document.querySelector('.lip_mac_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function fe_changeImage(newImage) {
+            const imageElement = document.querySelector('.Fenty_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function rare_changeImage(newImage) {
+            const imageElement = document.querySelector('.rare_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function shefa_changeImage(newImage) {
+            const imageElement = document.querySelector('.shefa_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        function essence_changeImage(newImage) {
+            const imageElement = document.querySelector('.essence_img img');
+            if (imageElement) {
+                imageElement.src = newImage;
+            } else {
+                console.error('Image element not found.');
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const profileImages = document.getElementsByClassName('profile');
+            const profileImageOpen = document.querySelector('.open-image');
+            const menu = document.getElementById('dropdownMenu');
+
+            Array.from(profileImages).forEach(profileImage => {
+                profileImage.addEventListener('click', function () {
+                    if (menu.style.display === 'block') {
+                        menu.style.display = 'none';
+                        profileImage.style.opacity = '1';
+                        profileImageOpen.classList.remove('show');
+                    } else {
+                        menu.style.display = 'block';
+                        profileImage.style.opacity = '0';
+                        profileImageOpen.classList.add('show');
+                    }
+                });
+            });
+            document.addEventListener('click', function (event) {
+                if (!Array.from(profileImages).includes(event.target) && !menu.contains(event.target) && !profileImageOpen.contains(event.target)) {
+                    menu.style.display = 'none';
+                    Array.from(profileImages).forEach(profileImage => profileImage.style.opacity = '1');
+                    profileImageOpen.classList.remove('show');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('cartImage');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'cart.HTML';
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('pink-hreat');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'fav.HTML';
+            });
+        });
+
+        // Function to add a product to the cart
+        function addToCart(productName, productOldPrice, productNewPrice, productImage) {
+            // Retrieve existing cart items from localStorage or initialize as an empty array
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Find the product in the cart
+            const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+
+            if (existingProductIndex > -1) {
+                // If the product exists, increment the quantity
+                cartItems[existingProductIndex].quantity += 1;
+            } else {
+                // If the product does not exist, add a new item with quantity 1
+                cartItems.push({
+                    name: productName,
+                    oldPrice: productOldPrice ? productOldPrice : null, // Save old price if it exists
+                    newPrice: productNewPrice, // Save new price
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save updated cart array back to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Provide feedback to the user (optional)
+            alert(`${productName} added to cart!`);
+        }
+
+
+        function toggleHeart(heartId, name, image, oldPrice, newPrice) {
+            const heartImage = document.getElementById(heartId);
+            const isFavorite = heartImage.src.includes('heart_filled.png');
+
+            if (isFavorite) {
+                heartImage.src = 'Girls/heart.png'; // Change to the empty heart image
+                removeFromFavorites(name);
+            } else {
+                heartImage.src = 'Girls/heart_filled.png'; // Change to the filled heart image
+                addToFavorites(name, image, oldPrice, newPrice);
+            }
+        }
+
+        // Function to add a product to favorites and store it in local storage
+        function addToFavorites(name, image, oldPrice, newPrice) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+
+            // Check if item is already in favorites
+            if (!favorites.some(item => item.name === name)) {
+                favorites.push({ name, image, oldPrice, newPrice });
+                localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+            }
+        }
+
+        // Function to remove a product from favorites and update local storage
+        function removeFromFavorites(name) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+            favorites = favorites.filter(item => item.name !== name);
+            localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("logoutButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the cancel button
+        var cancelButton = document.getElementById("cancelButton");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks the cancel button, close the modal
+        cancelButton.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

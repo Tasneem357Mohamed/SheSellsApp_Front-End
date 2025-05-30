@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login_page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav>
+    <div class="bar">
+      <div class="nav_logo">
+        <div class="logo_text">
+          <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+        </div>
+        <div class="logo_image">
+        </div>
+      </div>
+      <div class="icon">
+      </div>
+      <div class="home">
+        <a href="home.html">
+          <button>Home Page<span></span></button>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- login -->
+
+  <div class="all">
+    <div class="wrapper">
+
+      <form id="loginForm" onsubmit="return validateLogin(event)">
+        <h1>LOGIN</h1>
+        <div class="input-box">
+          <input type="text" id="loginUserName" placeholder="User name" required>
+          <i class='bx bxs-user'></i>
+          <span class="error" id="loginUserNameError"></span>
+        </div>
+        <div class="input-box">
+          <input type="text" id="loginEmail" placeholder="E_mail" required>
+          <i class='bx bxs-envelope'></i>
+          <span class="error" id="loginEmailError"></span>
+        </div>
+        <div class="input-box">
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <i class='bx bxs-lock-alt'></i>
+          <span class="error" id="loginPasswordError"></span>
+        </div>
+        <div class="remember-forget">
+          <label><input type="checkbox" id="showPassword"> Show Password</label>
+          <a href="#">Forget password?</a>
+        </div>
+        <button type="submit" class="btn" id="loginButton">Login</button>
+        <div class="register-link">
+          <p>Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const text = document.querySelector('.logo_text p');
+      text.innerHTML = text.innerText.split("").map(
+        (char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+      ).join("");
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Handle password visibility toggle
+      const showPasswordCheckbox = document.getElementById('showPassword');
+      const passwordField = document.getElementById('loginPassword');
+
+      showPasswordCheckbox.addEventListener('change', () => {
+        if (showPasswordCheckbox.checked) {
+          passwordField.type = 'text'; // Show password
+        } else {
+          passwordField.type = 'password'; // Hide password
+        }
+      });
+    });
+
+    function validateLogin(event) {
+      event.preventDefault();
+
+      // Clear previous error messages
+      const userNameError = document.getElementById('loginUserNameError');
+      const emailError = document.getElementById('loginEmailError');
+      const passwordError = document.getElementById('loginPasswordError');
+
+      if (userNameError) userNameError.innerText = '';
+      if (emailError) emailError.innerText = '';
+      if (passwordError) passwordError.innerText = '';
+
+      // Get form values
+      const loginUserName = document.getElementById('loginUserName').value.trim();
+      const loginEmail = document.getElementById('loginEmail').value.trim();
+      const loginPassword = document.getElementById('loginPassword').value.trim();
+
+      // Validate UserName
+      if (loginUserName === '') {
+        if (userNameError) userNameError.innerText = 'User name is required.';
+        return false;
+      }
+
+      // Validate Email
+      if (loginEmail === '') {
+        if (emailError) emailError.innerText = 'Email is required.';
+        return false;
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(loginEmail)) {
+        if (emailError) emailError.innerText = 'Invalid email format.';
+        return false;
+      }
+
+      // Validate Password
+      if (loginPassword === '') {
+        if (passwordError) passwordError.innerText = 'Password is required.';
+        return false;
+      }
+
+      // Retrieve user and admin data from local storage
+      const adminData = JSON.parse(localStorage.getItem('adminData'));
+      const userData = JSON.parse(localStorage.getItem('userData'));
+
+      let isAdminUser = false;
+      let isUser = false;
+
+      if (adminData && loginUserName === adminData.username && loginPassword === adminData.password) {
+        isAdminUser = true;
+      }
+
+      else if (userData && loginUserName === userData.userName && loginPassword === userData.password) {
+        isUser = true;
+      }
+
+      if (isAdminUser) {
+        window.location.replace("Admin_site.HTML");
+      }
+      if (isUser) {
+        localStorage.setItem('isLoggedIn', 'true');
+        window.location.replace("home.html");
+      }
+      if (isAdminUser === false && isUser === false) {
+        alert('Invalid UserName, Email, or Password.');
+      }
+      return false;
+    }
+
+
+
+  </script>
+</body>
+
+</html>

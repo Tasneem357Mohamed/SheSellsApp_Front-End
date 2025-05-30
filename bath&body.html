@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bath & Body</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bath&body.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_logo">
+            <div class="logo_text">
+                <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+            </div>
+            <div class="logo_image">
+            </div>
+        </div>
+        <div class="nav_slide">
+            <div class="nav_icon_buttons">
+                <div class="nav_search">
+                    <form class="search_bar">
+                        <input type="text" placeholder="Search Here">
+                        <button type="submit"><img src="Girls/search.png"></button>
+                    </form>
+                </div>
+                <div class="nav_icon">
+                    <ul>
+                        <li>
+                            <div class="heart-container">
+                                <img src="Girls/pinky-heart.png" class="clicking heart_img" alt="heart" id="pink-hreat">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-container">
+                                <img src="Girls/Cart.png" class="clicking cart_img" alt="Cart">
+                                <img src="Girls/Deep_cart.png" class="clicking open_cart" id="cartImage"
+                                    alt="Open Cart">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-container">
+                                <img src="Girls/Profile.png" class="clicking profile" />
+                                <img src="Girls/Deep_profile.png" class="clicking open-image">
+                                <div id="dropdownMenu" class="dropdown-menu">
+                                    <a href="userpage.htm">My Profile</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Log Out Button -->
+                            <button id="logoutButton">Log Out</button>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Are you sure you want to log out?</p>
+                                    <a href="home.html"><button>Yes, Log Out</button></a>
+                                    <button id="cancelButton">Cancel
+
+                                    </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_content">
+                <a href="Make_up.HTML">Make Up<span></span></a>
+                <a href="skincare.html">Skin Care<span></span></a>
+                <a href="hairpage.html">Hair Care<span></span></a>
+                <a href="bath&body.html">Body&Bath<span></span></a>
+                <a href="cindex.html">Clothes<span></span></a>
+                <a href="Bags&Shoes.html">Shoes&Bags<span></span></a>
+                <a href="Access.html">Accessories<span></span></a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="openningph">
+        <h2>Body&Bath Section</h2>
+    </div>
+
+    <div class="lattest">
+        <p class="fon1">Our Lattest Products</p>
+    </div>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="561724785398.jpg" alt="Neutrogena Rainbath " class="product-image">
+            <h2 class="product-title">Neutrogena Rainbath </h2>
+            <p class="product-description">Strawberries & Champagne</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', '561724785398.jpg', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , '561724785398.jpg')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+        <div class="product">
+            <img src="661724784773.jpg" alt="Neutrogena Rainbath" class="product-image">
+            <h2 class="product-title">Neutrogena Rainbath</h2>
+            <p class="product-description">Refreshing Shower</p>
+            <p class="product-price">$37.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', '661724784773.jpg', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , '661724784773.jpg')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+        <div class="product">
+            <img src="671724785442.jpg" alt="Viva Vanilla" class="product-image">
+            <h2 class="product-title">Viva Vanilla</h2>
+            <p class="product-description">Mix & Match Select Body</p>
+            <p class="product-price">$19.0</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+
+        </div>
+
+
+
+
+        <div class="product">
+            <img src="681724785046.jpg" alt="Coco Vanilla" class="product-image">
+            <h2 class="product-title">Coco Vanilla</h2>
+            <p class="product-description">Body Wash</p>
+            <p class="product-price">$35.0</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+    </div>
+    <div class="bestseller">
+        <p class="fon2">Best Seller</p>
+
+    </div>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="701724784919.jpg" alt="Forsted Coconut" class="product-image">
+            <h2 class="product-title">Forsted Coconut</h2>
+            <p class="product-description">Body Mist</p>
+            <p class="product-price">$40.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+        <div class="product">
+            <img src="711724784884.jpg" alt="Carolina Herrera " class="product-image">
+            <h2 class="product-title">Carolina Herrera </h2>
+            <p class="product-description">Perfume</p>
+            <p class="product-price">$80.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+        <div class="product">
+            <img src="AC.jpg" alt="gingham" class="product-image">
+            <h2 class="product-title">gingham</h2>
+            <p class="product-description">Fine Fragrance Mist</p>
+            <p class="product-price">$14.50</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+
+
+        <div class="product">
+            <img src="721724785017.jpg" alt="OSIS +" class="product-image">
+            <h2 class="product-title">OSIS +</h2>
+            <p class="product-description"> Hair Protection Spray</p>
+            <p class="product-price">$28.0</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+        <br>
+        <div class="product">
+            <img src="741724785108.jpg" alt="dae" class="product-image">
+            <h2 class="product-title">dae</h2>
+            <p class="product-description">Styling Cream</p>
+            <p class="product-price">$9.0</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+        <div class="product">
+            <img src="751724784943.jpg" alt="Shampoo" class="product-image">
+            <h2 class="product-title">MONDAY</h2>
+            <p class="product-description">Volume Shampoo</p>
+            <p class="product-price">$21.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+
+
+        <div class="product">
+            <img src="771724785469.jpg" alt="Product 1" class="product-image">
+            <h2 class="product-title">OLAPLEX</h2>
+            <p class="product-description">Mostrize Mask</p>
+            <p class="product-price">$10.5</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div><br />
+        </div>
+
+
+
+        <div class="product">
+            <img src="771724785157.jpg" alt="amika" class="product-image">
+            <h2 class="product-title">amika</h2>
+            <p class="product-description">Repair Treatment</p>
+            <p class="product-price">$16.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+    </div>
+    <div class="Hair-Accessories">
+        <h2>Kits</h2>
+
+    </div>
+    <div class="product-container">
+        <div class="product 1 ">
+            <img src="711724789514.jpg" alt="Peach Sunrise" class="product-image">
+            <h2 class="product-title">Peach Sunrise </h2>
+
+            <p class="product-price">$57.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+        <div class="product 2 ">
+            <img src="721724789353.jpg" alt="Freah Vanilla" class="product-image">
+            <h2 class="product-title">Freah Vanilla</h2>
+
+            <p class="product-price">$47.80</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+        <div class="product 3 ">
+            <img src="731724789400.jpg" alt="Berry Martini" class="product-image">
+            <h2 class="product-title">Berry Martini</h2>
+
+            <p class="product-price">$35.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+
+
+        <div class="product 4 ">
+            <img src="751724789425.jpg" alt="Clips" class="product-image">
+            <h2 class="product-title">Strewberry Chesecake</h2>
+
+            <p class="product-price">$52.0</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+        <br>
+        <div class="product 5 ">
+            <img src="751724789539.jpg" alt="Product 1" class="product-image">
+            <h2 class="product-title">Winterberry Wonder</h2>
+
+            <p class="product-price">$20.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+        <div class="product 6 ">
+            <img src="791724789451.jpg" alt="Product 1" class="product-image">
+            <h2 class="product-title">Pound Cake</h2>
+            <p class="product-description">No Damage Hair</p>
+            <p class="product-price">$7.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+
+
+        <div class="product 7">
+            <img src="791724789478.jpg" alt="Product 1" class="product-image">
+            <h2 class="product-title">Vanilla</h2>
+
+            <p class="product-price">$55.00</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+
+        <div class="product">
+            <img src="791724789605.jpg" alt="Product 1" class="product-image">
+            <h2 class="product-title">Cherry</h2>
+            <p class="product-description">Decorative clasps</p>
+            <p class="product-price">$7.50</p>
+            <div class="heart_button">
+                <img src="Girls/heart.png" id="heart13-image"
+                    onclick="toggleHeart('heart13-image','Flower highliter', 'Girls/glitter/flower.png', 'null' , '70.90$')">
+            </div>
+            <div class="cart_button">
+                <button onclick="addToCart('Flower highliter' , null , 70.90 , 'Girls/glitter/flower.png')">Add
+                    To Cart</button>
+            </div> <br />
+        </div>
+
+
+    </div>
+    <footer id="footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h2 class="social">Follow Us</h2>
+                <ul class="social-media">
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-facebook"></i></div>
+                        <div class="link"> <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                Facebook
+                            </a></div>
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-twitter"></i></div>
+                        <div class="link"> <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                Twitter
+                            </a></div>
+
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class="bi bi-instagram"></i></div>
+                        <div class="link"> <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                Instagram
+                            </a></div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h2 class="about">About Us</h2>
+                <p class="p_about">We are a company that provides excellent products and services.</p>
+            </section>
+            <section class="footer-section">
+                <h2 class="contact">Contact Us</h2>
+                <p><span class="con">Email:</span> contact@example.com</p>
+                <p><span class="con">Phone:</span> (123) 456-7890</p>
+            </section>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+
+    </div>
+
+
+    <script>
+        function toggleFavorite(buttonNum) {
+            var heartButtons = document.querySelectorAll('.heart-button');
+
+            heartButtons.forEach(function (button, index) {
+                if (index + 1 === buttonNum) {
+                    button.classList.add('clicked');
+                } else {
+                    button.classList.remove('clicked');
+                }
+            });
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("logoutButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the cancel button
+        var cancelButton = document.getElementById("cancelButton");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks the cancel button, close the modal
+        cancelButton.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.querySelector('.logo_text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+            ).join("");
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('cartImage');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'cart.HTML';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('pink-hreat');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'fav.HTML';
+            });
+        });
+
+        // Function to add a product to the cart
+        function addToCart(productName, productOldPrice, productNewPrice, productImage) {
+            // Retrieve existing cart items from localStorage or initialize as an empty array
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Find the product in the cart
+            const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+
+            if (existingProductIndex > -1) {
+                // If the product exists, increment the quantity
+                cartItems[existingProductIndex].quantity += 1;
+            } else {
+                // If the product does not exist, add a new item with quantity 1
+                cartItems.push({
+                    name: productName,
+                    oldPrice: productOldPrice ? productOldPrice : null, // Save old price if it exists
+                    newPrice: productNewPrice, // Save new price
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save updated cart array back to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Provide feedback to the user (optional)
+            alert(`${productName} added to cart!`);
+        }
+
+
+        function toggleHeart(heartId, name, image, oldPrice, newPrice) {
+            const heartImage = document.getElementById(heartId);
+            const isFavorite = heartImage.src.includes('heart_filled.png');
+
+            if (isFavorite) {
+                heartImage.src = 'Girls/heart.png'; // Change to the empty heart image
+                removeFromFavorites(name);
+            } else {
+                heartImage.src = 'Girls/heart_filled.png'; // Change to the filled heart image
+                addToFavorites(name, image, oldPrice, newPrice);
+            }
+        }
+
+        // Function to add a product to favorites and store it in local storage
+        function addToFavorites(name, image, oldPrice, newPrice) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+
+            // Check if item is already in favorites
+            if (!favorites.some(item => item.name === name)) {
+                favorites.push({ name, image, oldPrice, newPrice });
+                localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+            }
+        }
+
+        // Function to remove a product from favorites and update local storage
+        function removeFromFavorites(name) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+            favorites = favorites.filter(item => item.name !== name);
+            localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("logoutButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the cancel button
+        var cancelButton = document.getElementById("cancelButton");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks the cancel button, close the modal
+        cancelButton.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

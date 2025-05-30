@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories-page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include CircleType.js -->
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav_logo">
+            <div class="logo_text">
+                <p>I'm Just A Girl &#x27E1; I'm Just A Girl &#x27E1;</p>
+            </div>
+            <div class="logo_image">
+            </div>
+        </div>
+        <div class="nav_slide">
+            <div class="nav_icon_buttons">
+                <div class="nav_search">
+                    <form class="search_bar">
+                        <input type="text" placeholder="Search Here">
+                        <button type="submit"><img src="Girls/search.png"></button>
+                    </form>
+                </div>
+                <div class="nav_icon">
+                    <ul>
+                        <li>
+                            <div class="heart-container">
+                                <img src="Girls/pinky-heart.png" class="clicking heart_img" alt="heart" id="pink-hreat">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-container">
+                                <img src="Girls/Cart.png" class="clicking cart_img" alt="Cart">
+                                <img src="Girls/Deep_cart.png" class="clicking open_cart" id="cartImage"
+                                    alt="Open Cart">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-container">
+                                <img src="Girls/Profile.png" class="clicking profile" />
+                                <img src="Girls/Deep_profile.png" class="clicking open-image">
+                                <div id="dropdownMenu" class="dropdown-menu">
+                                    <a href="userpage.html">My Profile</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <!-- Log Out Button -->
+                            <button id="logoutButton">Log Out</button>
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Are you sure you want to log out?</p>
+                                    <a href="home.html"><button>Yes, Log Out</button></a>
+                                    <button id="cancelButton">Cancel</button>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_content">
+                <a href="Make_up.HTML">Make Up<span></span></a>
+                <a href="skincare.html">Skin Care<span></span></a>
+                <a href="hairpage.html">Hair Care<span></span></a>
+                <a href="bath&body.html">Body&Bath<span></span></a>
+                <a href="cindex.html">Clothes<span></span></a>
+                <a href="Bags&Shoes.html">Shoes&Bags<span></span></a>
+                <a href="Access.html">Accessories<span></span></a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <!-- accessories section -->
+    <section>
+
+        <h1> &#x1f380; Accessories &#x1f380; </h1>
+        <!-- row 1 -->
+        <div class="row1">
+
+            <div class="d">
+                <div class="sale">
+                    <input type="button" value="Sale">
+                </div>
+                <div class="pic"><img
+                        src="1pc_Kids_Heart_Pendant_Simple_ABS_Fashion_Necklace_For_Daily_Wear-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> Gold Necklace</h3>
+                    <h3>50.00$</h3>
+                    <div class="cart">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', '1pc_Kids_Heart_Pendant_Simple_ABS_Fashion_Necklace_For_Daily_Wear-removebg-preview.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button
+                                onclick="addToCart('Dior Foundation',554.00,332.40 ,'1pc_Kids_Heart_Pendant_Simple_ABS_Fashion_Necklace_For_Daily_Wear-removebg-preview.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="2pcs_Rhinestone_Star_Planet_Charm_Necklace-removebg-preview.png" alt="">
+                </div>
+                <div class="details">
+                    <h3> Star_Planet_Charm_Necklace</h3>
+                    <h3>70.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="3D_Balloon_Initial_Necklace__Gold_Puff_Letter__Custom_Dainty_Pendant__Balloon_Charm__Bubble_Choker__Personalized_Alphabet-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> 3D_Balloon_Necklace_Gold_Letter</h3>
+                    <h3>90.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Three_Names_Necklace__Dainty_Necklace__Three_Hearts_Necklace__Chrysanthemum_Flower__Mother_s_Day_Gift__Personalized_Jewelry__Christmas_Gift_-_Etsy-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> Three_Names_Necklace</h3>
+                    <h3>60.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Gold_Flower_Leaf_Necklace__Engraved_Gold_Charm__9K_14K_18K_Gold_Necklace__Yellow_Gold__Solid_Gold_Floral_Pendant__Dainty_Gift_For_Her-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3>Gold_Flower_Leaf_Necklace </h3>
+                    <h3>100.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- row2 -->
+        <div class="row1">
+
+            <div class="d">
+                <div class="pic"><img src="Lock___Key_Charm_Chain_Necklace_Set_-_6pcs-removebg-preview.png" alt="">
+                </div>
+                <div class="details">
+                    <h3> Charm_Chain_Necklace_set</h3>
+                    <h3>500.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Three_Names_Necklace__Dainty_Necklace__Three_Hearts_Necklace__Chrysanthemum_Flower__Mother_s_Day_Gift__Personalized_Jewelry__Christmas_Gift_-_Etsy-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> 4_piezas_Set_joya</h3>
+                    <h3>600.00$</h3>
+                    <div class="cart">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="sale">
+                    <input type="button" value="Sale">
+                </div>
+                <div class="pic"><img src="Gold_Pearl_Triple_Layer_Beaded_Necklace___2_Pcs-removebg-preview.png" alt="">
+                </div>
+                <div class="details">
+                    <h3> Gold_Pearl_Layer_Necklace</h3>
+                    <h3>120.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Gold_Tulip_Stud_Earrings__Flower_Earrings__Floral_Jewelry__Flower_Stud_Earrings__Bridesmaid_Gift__Mother_s_Day_Gift_for_Her__Friendship_Gift_-_Etsy-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3>Gold_Tulip_Stud_Earrings </h3>
+                    <h3>115.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Pink_Magic_Heart_Necklace__M_-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Pink_Magic_Heart_Necklace</h3>
+                    <h3>150.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- row 3 -->
+        <div class="row1">
+
+            <div class="d">
+                <div class="pic"><img src="Aria_Ring-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Aria_Ring</h3>
+                    <h3>25.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Bow_Simple_Female_Design_Senior_Sense_Earrings-removebg-preview.png" alt="">
+                </div>
+                <div class="details">
+                    <h3> Simple_Design_Sense_Earrings</h3>
+                    <h3>85.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Butterfly_Charm_Layered_Anklet-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Butterfly_Charm_Layered_Anklet</h3>
+                    <h3>75.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Butterfly_Decor_Anklet-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Butterfly_Decor_Anklet</h3>
+                    <h3>45.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="sale">
+                    <input type="button" value="Sale">
+                </div>
+                <div class="pic"><img src="Crystal_Drop_Earrings-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3>Crystal_Drop_Earrings </h3>
+                    <h3>200.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- row4 -->
+        <div class="row1">
+
+            <div class="d">
+                <div class="pic"><img src="Dainty_Minimal_Gold_Ring_Stack___BEADS_by_Tara-removebg-preview.png" alt="">
+                </div>
+                <div class="details">
+                    <h3> Dainty_Minimal_Gold</h3>
+                    <h3>35.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="sale">
+                    <input type="button" value="Sale">
+                </div>
+                <div class="pic"><img src="Flower_Decor_Layered_Anklet-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Flower_Decor_Layered_Anklet</h3>
+                    <h3>55.00$</h3>
+                    <div class="cart">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Gem_Stone_Butterfly_Pendant_Necklace_-_Assorted_Colors_-_Pink___one_size-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> Gem_Stone_Butterfly_Pendant_Necklace</h3>
+                    <h3>95.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Geometric_Square_Vintage_Emerald_Live_Clavicle_Necklaces_-_Tx214-Emerald_Ear_Studs-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> TEmerald_Live_Clavicle_Necklaces</h3>
+                    <h3>135.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Rhinestone_Decor_Bracelet-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3>Rhinestone_Decor_Bracelet</h3>
+                    <h3>170.00$</h3>
+                    <div class="cart">
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row1">
+
+            <div class="d">
+                <div class="pic"><img
+                        src="Olive_Branch_Dainty_Vine_9K_Solid_Gold_Adjustable_Ring_Inset_Marquise_Cut_Moissanite_Ring_Handmade_Stacking_Minimal_Thin_Statement_Ring-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3> Olive_Branch_Dainty_Vine</h3>
+                    <h3>340.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Rhinestone_Decor_Bracelet-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Rhinestone_Decor_Bracelet</h3>
+                    <h3>220.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Rhinestone_Flower_Chain_Bracelet-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Rhinestone_Flower_Chain_Bracelet</h3>
+                    <h3>178.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+
+                <div class="sale">
+                    <input type="button" value="Sale">
+                </div>
+                <div class="pic"><img src="Rhinestone_Flower_Decor_Cuff_Ring-removebg-preview.png" alt=""></div>
+                <div class="details">
+                    <h3> Rhinestone_Flower_Cuff</h3>
+                    <h3>65.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d">
+                <div class="pic"><img src="Pulsera_abierta_zirconia_cฃbica_con_diseคo_de_hoja-removebg-preview.png"
+                        alt=""></div>
+                <div class="details">
+                    <h3>Pulsera_abierta_zirconia</h3>
+                    <h3>165.00$</h3>
+                    <div class="cart">
+
+                        <div class="heart_button">
+                            <img src="Girls/heart.png" id="heart1-image"
+                                onclick="toggleHeart('heart1-image', 'Dior Foundation', 'Girls/Dior/Dior_set.png', '554.00$', '332.40$')">
+                        </div>
+                        <div class="cart_button">
+                            <button onclick="addToCart('Dior Foundation',554.00,332.40 ,'Girls/Dior/Dior_set.png')">Add
+                                To
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h2 class="social">Follow Us</h2>
+                <ul class="social-media">
+                    <li class="social_lick">
+                        <div class="link_icon"><i class='bx bxl-facebook-circle'></i></div>
+                        <div class="link"> <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                Facebook
+                            </a></div>
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class='bx bxl-twitter'></i></div>
+                        <div class="link"> <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                Twitter
+                            </a></div>
+
+                    </li>
+                    <li class="social_lick">
+                        <div class="link_icon"><i class='bx bxl-instagram'></i></div>
+                        <div class="link"> <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                Instagram
+                            </a></div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h2 class="about">About Us</h2>
+                <p class="p_about">We are a company that provides excellent products and services.</p>
+            </section>
+            <section class="footer-section">
+                <h2 class="contact">Contact Us</h2>
+                <p><span class="con">Email:</span> contact@example.com</p>
+                <p><span class="con">Phone:</span> (123) 456-7890</p>
+            </section>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Our Website. All rights reserved.</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = document.querySelector('.logo_text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) => `<span style="transform:rotate(${i * 10}deg)">${char}</span>`
+            ).join("");
+        });
+        const profileImages = document.getElementsByClassName('profile');
+        const profileImageOpen = document.querySelector('.open-image');
+        const menu = document.getElementById('dropdownMenu');
+
+        Array.from(profileImages).forEach(profileImage => {
+            profileImage.addEventListener('click', function () {
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                    profileImage.style.opacity = '1';
+                    profileImageOpen.classList.remove('show');
+                } else {
+                    menu.style.display = 'block';
+                    profileImage.style.opacity = '0';
+                    profileImageOpen.classList.add('show');
+                }
+            });
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!Array.from(profileImages).includes(event.target) &&
+                !menu.contains(event.target) &&
+                !profileImageOpen.contains(event.target)) {
+                menu.style.display = 'none';
+                Array.from(profileImages).forEach(profileImage => profileImage.style.opacity = '1');
+                profileImageOpen.classList.remove('show');
+            }
+        });
+
+        // Cart image click event
+        const cartImage = document.getElementById('cartImage');
+        if (cartImage) {
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked'); // Debugging statement
+                window.location.href = '#'; // Replace with your target URL
+            });
+        }
+
+        //click on heart
+        // document.getElementById('icon-cont').addEventListener('click',function(){
+
+        function toggleIcon() {
+            const icon = document.getElementById('ic');
+            const currentClass = icon.className;
+
+            // Toggle between two icons
+            if (currentClass.includes('bx bx-heart')) {
+                icon.className = 'bx bxs-heart'; // Change to moon icon
+            } else {
+                icon.className = 'bx bx-heart'; // Change to sun icon
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('cartImage');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'cart.HTML';
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartImage = document.getElementById('pink-hreat');
+
+            cartImage.addEventListener('click', function () {
+                console.log('Image clicked');
+                window.location.href = 'fav.HTML';
+            });
+        });
+
+        // Function to add a product to the cart
+        function addToCart(productName, productOldPrice, productNewPrice, productImage) {
+            // Retrieve existing cart items from localStorage or initialize as an empty array
+            let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Find the product in the cart
+            const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+
+            if (existingProductIndex > -1) {
+                // If the product exists, increment the quantity
+                cartItems[existingProductIndex].quantity += 1;
+            } else {
+                // If the product does not exist, add a new item with quantity 1
+                cartItems.push({
+                    name: productName,
+                    oldPrice: productOldPrice ? productOldPrice : null, // Save old price if it exists
+                    newPrice: productNewPrice, // Save new price
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save updated cart array back to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Provide feedback to the user (optional)
+            alert(`${productName} added to cart!`);
+        }
+
+
+        function toggleHeart(heartId, name, image, oldPrice, newPrice) {
+            const heartImage = document.getElementById(heartId);
+            const isFavorite = heartImage.src.includes('heart_filled.png');
+
+            if (isFavorite) {
+                heartImage.src = 'Girls/heart.png'; // Change to the empty heart image
+                removeFromFavorites(name);
+            } else {
+                heartImage.src = 'Girls/heart_filled.png'; // Change to the filled heart image
+                addToFavorites(name, image, oldPrice, newPrice);
+            }
+        }
+
+        // Function to add a product to favorites and store it in local storage
+        function addToFavorites(name, image, oldPrice, newPrice) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+
+            // Check if item is already in favorites
+            if (!favorites.some(item => item.name === name)) {
+                favorites.push({ name, image, oldPrice, newPrice });
+                localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+            }
+        }
+
+        // Function to remove a product from favorites and update local storage
+        function removeFromFavorites(name) {
+            let favorites = JSON.parse(localStorage.getItem('favoritesItems')) || [];
+            favorites = favorites.filter(item => item.name !== name);
+            localStorage.setItem('favoritesItems', JSON.stringify(favorites));
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("logoutButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the cancel button
+        var cancelButton = document.getElementById("cancelButton");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks the cancel button, close the modal
+        cancelButton.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
